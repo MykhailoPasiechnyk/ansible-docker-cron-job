@@ -1,0 +1,3 @@
+---
+script_name: "docker-script.sh"
+destin_folder: /home/ec2-user
