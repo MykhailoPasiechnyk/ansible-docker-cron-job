@@ -5,6 +5,7 @@
 
 - name: Cron job
   ansible.builtin.cron:
+    user: "ec2-user"
     name: "check digest"
     minute: "2"
     job: "{{ destin_folder }}/{{ script_name }}"
