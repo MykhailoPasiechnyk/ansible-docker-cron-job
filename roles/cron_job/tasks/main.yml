@@ -1,7 +1,12 @@
 ---
 # tasks file for cron_job
 - name: Copy script file to folder
-  copy: src={{ script_name }} dest={{ destin_folder }} mode=0551
+  copy: 
+    src: "{{ script_name }}"
+    dest: "{{ destin_folder }}"
+    mode: 0551
+    owner: "ec2-user"
+    group: "ec2-user"
 
 - name: Cron job
   ansible.builtin.cron:
