@@ -1,0 +1,9 @@
+---
+- name: "AWS - Install docker, pull image and create cron job"
+  hosts: localhost
+  become: yes
+
+  roles:
+    - install_required_packages
+    - docker
+    - cron_job

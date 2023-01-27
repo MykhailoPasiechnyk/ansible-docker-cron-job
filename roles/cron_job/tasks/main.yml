@@ -1,0 +1,7 @@
+---
+# tasks file for cron_job
+- name: Cron job"
+  ansible.builtin.cron:
+    name: "check digest"
+    minute: "2"
+    job: "docker-script.sh"
