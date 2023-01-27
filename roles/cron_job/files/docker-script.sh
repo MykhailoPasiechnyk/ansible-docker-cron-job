@@ -7,7 +7,8 @@ TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d '{"username": "'$
 HUB_DIGEST=$(curl -s -H "Authorization: JWT ${TOKEN}" https://hub.docker.com/v2/repositories/${REPONAME}/tags/?page_size=100 | jq -r '.results|.[]|.digest')
 
 
-if [[ "$LOCAL_DIGEST" == "$HUB_DIGEST" ]]; then
+if [[ "${LOCAL_DIGEST}" == "${HUB_DIGEST}" ]]
+then
     echo "Nothing to change"
 else
     sudo docker pull pasiechnyk/flask-hello:latest
