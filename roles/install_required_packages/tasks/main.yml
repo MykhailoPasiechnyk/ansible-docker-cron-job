@@ -18,3 +18,4 @@
     - device-mapper-persistent-data
     - lvm2
     - amazon-linux-extras
+    - jq
