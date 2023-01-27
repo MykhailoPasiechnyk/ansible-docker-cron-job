@@ -1,7 +1,10 @@
 ---
 # tasks file for cron_job
-- name: Cron job"
+- name: Copy script file to folder
+  cope: src={{ script_name }} dest={{ destin_folder }}
+
+- name: Cron job
   ansible.builtin.cron:
     name: "check digest"
     minute: "2"
-    job: "docker-script.sh"
+    job: "{{ destin_folder }}/{{ script_name }}"
