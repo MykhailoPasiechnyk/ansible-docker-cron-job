@@ -1,11 +1,11 @@
 # Ansible install docker and set up cron job to EC2 AWS
 
-## Create AWS EC2 instance by using Terraform
-### EC2:
+### Create AWS EC2 instance by using Terraform:
 - [Create AWS EC2 instanse by using Terraform](https://github.com/MykhailoPasiechnyk/terraform-EC2-instance-with-VPC)
 
 ### Connect to Instance:
-- [Connect from the Amazon EC2 console](https://aws.amazon.com/blogs/compute/new-using-amazon-ec2-instance-connect-for-ssh-access-to-your-ec2-instances/#:~:text=Open%20the%20Amazon%20EC2%20console,based%20SSH%20connection)%2C%20Connect.)
+- [Connect from the Amazon EC2 console](https://aws.amazon.com/blogs/compute/new-using-amazon-ec2-instance-connect-for-ssh-access-to-your-ec2-instances/)
+
 
 ### Set variables for docker login:
 #### Change 'username' and 'password'
